@@ -1,0 +1,55 @@
+package October_2;
+
+import java.util.Date;
+
+public class Overdue {
+	
+	private String userId;
+	private String  bookNum;
+	private Date overdueDate;
+	private Date rentalAvailable;
+	private boolean returnStatus;
+	
+	
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getBookNum() {
+		return bookNum;
+	}
+	public void setBookNum(String bookNum) {
+		this.bookNum = bookNum;
+	}
+	public Date getOverdueDate() {
+		return overdueDate;
+	}
+	public void setOverdueDate(Date overdueDate) {
+		this.overdueDate = overdueDate;
+	}
+	public Date getRentalAvailable() {
+		return rentalAvailable;
+	}
+	public void setRentalAvailable(Date rentalAvailable) {
+		this.rentalAvailable = rentalAvailable;
+	}
+	public boolean isReturnStatus() {
+		return returnStatus;
+	}
+	public void setReturnStatus(boolean returnStatus) {
+		this.returnStatus = returnStatus;
+	}
+	@Override
+	public String toString() {
+		return "Overdue [userId=" + userId + ", bookNum=" + bookNum + ", overdueDate=" + overdueDate
+				+ ", rentalAvailable=" + rentalAvailable + ", returnStatus=" + returnStatus + "]";
+	}
+	
+	
+	
+	
+	
+
+}
