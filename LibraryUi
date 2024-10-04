@@ -1,0 +1,97 @@
+package October_2;
+
+import java.util.Scanner;
+
+public class LibraryUi {
+	Scanner sc = new Scanner(System.in);
+	
+	public void ui() {
+		System.out.println("[1]로그인 [2]회원가입 [3]ID/PW 찾기 [4]관리자로그인 [5]종료");
+		switch(sc.nextInt()) {
+		case 1:
+			
+			break;
+		case 2:
+			
+		}
+		
+	}
+	
+
+	// 사용자 메인화면 
+	public void userMain() {
+		System.out.println("[1]마이페이지 [2]도서검색 [3]신착도서 [4]도서대출베스트 [5]희망도서신청 [6]이달의 독서왕 [7]로그아웃");
+		switch(sc.nextInt()) {
+		case 1:
+			
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		case 6:
+			break;
+		case 7:
+		}	
+		
+	}
+	
+	// 사용자 마이페이지
+	public void myPage() {
+		System.out.println("[1]대여하기 [2]반납하기 [3]반납일 연장 [4]대출중인 도서 [5]대출내역 조회 [6]로그아웃");
+		switch(sc.nextInt()) {
+		case 1:
+			
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		case 6:
+
+		}	
+		
+	}
+	
+	
+	// 관리자 메인화면
+	public void manegerMain() {
+		System.out.println("[1]회원관리 [2]연체관리 [3]도서추가 [4]관리자추가 [5]로그아웃");
+		switch(sc.nextInt()) {
+		case 1:
+			
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+
+		}	
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
