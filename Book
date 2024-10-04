@@ -1,0 +1,70 @@
+package October_2;
+
+import java.util.Date;
+
+public class Book {
+	
+	private int bookNum;
+	private String bookName;
+	private String author;
+	private String publisher;
+	private int amount;
+	private Date registrationDate;
+	private Date rentalAvailability;
+	
+	
+	
+	public Date getRegistrationDate() {
+		return registrationDate;
+	}
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+	public Date getRentalAvailability() {
+		return rentalAvailability;
+	}
+	public void setRentalAvailability(Date rentalAvailability) {
+		this.rentalAvailability = rentalAvailability;
+	}
+	public int getBookNum() {
+		return bookNum;
+	}
+	public void setBookNum(int bookNum) {
+		this.bookNum = bookNum;
+	}
+	public String getBookName() {
+		return bookName;
+	}
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public String getPublisher() {
+		return publisher;
+	}
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+	public int getAmount() {
+		return amount;
+	}
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	@Override
+	public String toString() {
+		return "Book [bookNum=" + bookNum + ", bookName=" + bookName + ", author=" + author + ", publisher=" + publisher
+				+ ", amount=" + amount + ", registrationDate=" + registrationDate + ", rentalAvailability="
+				+ rentalAvailability + "]";
+	}
+	
+	
+	
+	
+
+}
