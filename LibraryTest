@@ -1,0 +1,13 @@
+package October_2;
+
+public class LibraryTest {
+
+	public static void main(String[] args) {
+		
+		LibraryUi ui = new LibraryUi();
+		ui.ui();
+		
+		
+	}
+
+}
