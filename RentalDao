@@ -1,0 +1,37 @@
+package October_2;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class RentalDao {
+	
+	Connection conn = DBcon.getConnection();
+	
+	//대여하기
+	// 유저 ID와 책번호를 매개변수로 넣어서 처리하면 될듯.
+	public void rental() {
+		String query = "INSERT INTO rental VALUES (?, ?, CURDATE(), DATE_ADD(CURDATE(), INTERVAL 6 DAY))";
+		PreparedStatement pstmt;
+		try {
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, "원영");
+			pstmt.setInt(2, 1);
+			
+			int result = pstmt.executeUpdate();
+			if(result == 1) {
+				System.out.println("대여 완료!");
+			}else {
+				System.out.println("대여 실패!");
+			}
+			
+					
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	
+	
+}
