@@ -1,0 +1,35 @@
+package October_2;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class BookDao {
+	
+	Connection conn = DBcon.getConnection();
+	
+	public void insertBook() {
+		String query = "INSERT INTO book (bookName, author, publisher, amount) VALUES (?, ?, ?, ?)";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, "녹나무의 파수꾼");
+			pstmt.setString(2, "히가시노 게이고");
+			pstmt.setString(3, "소미미디어");
+			pstmt.setInt(4, 18000);
+			
+			int result = pstmt.executeUpdate();
+			if (result == 1){
+				 System.out.println("등록 완료!");
+			}else {
+				System.out.println("등록 실패!");
+			}
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+}
